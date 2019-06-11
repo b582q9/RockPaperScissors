@@ -1,7 +1,7 @@
 # Rock,paper,scissors game with 2 strategies to play against human.
 Simple, console, game against human with two strategies.
 1. Probability counting to predict human choice (for more information contact athor).
-2. Simple quantity strategy - choose max. often figure.
+2. Simple quantity strategy - choose max. frequently used figure.
 
 # How to build
 Simply run ant inside game directory
