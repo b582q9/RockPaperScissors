@@ -116,8 +116,7 @@ public class RockPaperScissors{
         while(in.hasNext(p)){
             String s=in.nextLine().toLowerCase();
             switch(s.trim()){
-                case "1" 
-                    ,"2","3","r","p","s"->{
+                case "1","2","3","r","p","s"->{
                     s=GameFigures.getFigureFromUserInput(s).name();
                     userEntriesStatistic.setEntry(s,1);
                     counter++;
@@ -127,13 +126,11 @@ public class RockPaperScissors{
                         processResults(s,quantityStrg.computeMove(userEntriesStatistic.getEntries()).name());
                     }
                 }
-                case "4" 
-                    ,"v"->{
+                case "4","v"->{
                     printing.info(Optional.of("***Your statistic***"));
                     printing.results(gameResultsStatictic.getEntries());
                 }
-                case "5"
-                    ,"h"->printing.help(Optional.empty());
+                case "5","h"->printing.help(Optional.empty());
             };
         }
     }

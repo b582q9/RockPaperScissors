@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 /**
  *
- * @since  11 июня 2019 г. 00:10:29
+ * @since 11 июня 2019 г. 00:10:29
  * @version 0.1
  */
 public class ProbabilityStrategy implements Strategy<String,Integer,Map<String,Integer>,GameFigures>{
