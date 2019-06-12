@@ -4,8 +4,8 @@ Simple, console, game against human with two strategies.
 2. Simple quantity strategy - choose max. frequently used figure.
 
 # How to build
-Need ant 1.10+
-Simply run ant inside game directory
+Need Ant 1.10+, 
+simply run ant inside game directory
 
 # How to run
 Please, check that you use OpenJDK 12.0.1 or Oracle JDK 12.0.1.
