@@ -17,7 +17,7 @@ public class ProbabilityStrategy implements Strategy<String,Integer,Map<String,I
     @Override
     public GameFigures computeMove(Map<String,Integer> c){
         int total_inputs=c.entrySet().parallelStream().mapToInt(n->n.getValue()).sum();
-        var userFigureMaxRepeatProbability=StrictMath.pow((double)Collections.max(c.entrySet(),Map.Entry.comparingByValue()).getValue()/total_inputs,2);
+        double userFigureMaxRepeatProbability=StrictMath.pow((double)Collections.max(c.entrySet(),Map.Entry.comparingByValue()).getValue()/total_inputs,2);
         var userFiguresMaxRepeatedProbabilities=c.entrySet().parallelStream()
                 .map(n->Map.entry(n.getKey(),StrictMath.pow((double)n.getValue()/total_inputs,2)))
                 .collect(Collectors.filtering(n->Objects.equals(n.getValue(),userFigureMaxRepeatProbability),Collectors.toList()));

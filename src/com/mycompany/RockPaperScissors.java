@@ -126,6 +126,7 @@ public class RockPaperScissors{
                     printing.results(gameResultsStatictic.getEntries());
                 }
                 case "5","h"->printing.help(Optional.empty());
+                default->printing.info(Optional.of("Thanks for playing!\nGAME OVER"));
             };
         }
     }
