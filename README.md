@@ -1,7 +1,8 @@
-# Rock,paper,scissors game with 2 strategies to play against human.
-Simple, console, game against human with two strategies.
-1. Probability counting to predict human choice (for more information contact athor).
+# Simple rock,paper,scissors game with two strategies to play against human.
+Strategies:
+1. Probability counting to predict human choice (trying to exploit that humans are very bad at generating random numbers).
 2. Simple quantity strategy - choose max. frequently used figure.
+This game is trying to play fair - not to using "oposite strategy" wich depends on user inputs and simulates fairness.
 
 # How to build
 Need Ant 1.10+, 
