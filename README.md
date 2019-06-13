@@ -2,6 +2,8 @@
 Strategies:
 1. Probability counting to predict human choice (trying to exploit that humans are very bad at generating random numbers).
 2. Simple quantity strategy - choose max. frequently used figure.
+
+
 This game is trying to play fair - not to using "oposite strategy" wich depends on user inputs and simulates fairness.
 
 # How to build
