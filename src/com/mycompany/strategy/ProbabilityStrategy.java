@@ -14,11 +14,6 @@ import java.util.stream.Collectors;
  */
 public class ProbabilityStrategy implements Strategy<String,Integer,Map<String,Integer>,GameFigures>{
 
-    /**
-     *
-     * @param c
-     * @return
-     */
     @Override
     public GameFigures computeMove(Map<String,Integer> c){
         int total_inputs=c.entrySet().parallelStream().mapToInt(n->n.getValue()).sum();
