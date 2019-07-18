@@ -8,11 +8,6 @@ package com.mycompany.utilities;
 public enum GameFigures{
     ROCK, PAPER, SCISSORS;
 
-    /**
-     *
-     * @param v
-     * @return
-     */
     public static GameFigures getFigureFromUserInput(String v){
         return switch(v){
             case "1","r"->ROCK;

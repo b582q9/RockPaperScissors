@@ -16,11 +16,6 @@ import java.util.stream.Collectors;
  */
 public class QuantityStrategy implements Strategy<String,Integer,Map<String,Integer>,GameFigures>{
 
-    /**
-     *
-     * @param c
-     * @return
-     */
     @Override
     public GameFigures computeMove(Map<String,Integer> c){
         if(c.size()<=1){

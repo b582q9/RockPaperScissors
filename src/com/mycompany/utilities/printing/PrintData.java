@@ -14,19 +14,11 @@ import java.util.Optional;
  */
 public class PrintData implements Print<String,Throwable>{
 
-    /**
-     *
-     * @param results
-     */
     @Override
     public void results(Map<?,?> results){
         results.forEach((n,m)->System.out.println(n+":"+m));
     }
 
-    /**
-     *
-     * @param message
-     */
     @Override
     public void help(Optional<String> message){
         System.out.printf(Locale.US,"%1$s%n%n",message.orElse(LocalDateTime.now().format(DateTimeFormatter.ofPattern("EEEE' 'd'-'LLLL'-'u' 'HH':'mm':'ss",Locale.US))));
@@ -38,12 +30,8 @@ public class PrintData implements Print<String,Throwable>{
                 "- How to play (press 5, h or H)",
                 "- Any other key for exit",
                 "****************************************");
-    }    
+    }
 
-    /**
-     *
-     * @param err
-     */
     @Override
     public void errors(Throwable err){
         System.getLogger(PrintData.class.getName()).log(Level.ALL,null,null,err);

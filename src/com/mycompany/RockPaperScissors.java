@@ -105,11 +105,6 @@ public class RockPaperScissors{
 
     }
 
-    /**
-     *
-     * @param p
-     * @param in
-     */
     protected void processInput(Pattern p,Scanner in){
         probabilytyStrg=new ProbabilityStrategy();
         quantityStrg=new QuantityStrategy();
@@ -138,12 +133,6 @@ public class RockPaperScissors{
         }
     }
 
-    /**
-     *
-     * @param userInput
-     * @param AIturn
-     * @return
-     */
     protected boolean processResults(String userInput,String AIturn){
         printing.info(Optional.of("You choose:"+userInput+" <-=VS=-> AI choose:"+AIturn));
         if(userInput.equalsIgnoreCase(AIturn)){
@@ -186,10 +175,6 @@ public class RockPaperScissors{
         return AIEntriesStatistic.setEntry(AIturn,1);
     }
 
-    /**
-     *
-     * @param args
-     */
     public static void main(String... args){
         new RockPaperScissors();
     }
